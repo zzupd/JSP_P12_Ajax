@@ -15,7 +15,15 @@ $(function(){
 				dataType: "html",
 				async: true,
 				success: function(data){
-					console.log("수신된 데이터(html형식) : " + data);
+					//console.log("수신된 데이터(html형식) : " + data);
+					console.log("data : " + data);
+					
+					if (parseInt(data) == 1) {
+						$("#chkMsg").html("<b>사용중 ID.</b>");
+					} else {
+						$("#chkMsg").html("<b>사용가능</b>");
+					}
+					
 				},
 				error: function(){
 					console.log("error!");
