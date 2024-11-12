@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax_회원가입 ID 중복체크</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		<h1>JSP Ajax - 회원중복 체크</h1>
+		
+		<form id="idChkForm">
+			<div id="idInputArea">
+				<input type="text" id="memId" placeholder="아이디 입력" autofocus>
+				<button type="button" id="idChk">중복확인</button>
+				<span id="chkMsg"></span>
+			</div>
+			<div id="pwInputArea">
+				<input type="password" id="memPw" placeholder="비밀번호 입력">
+			</div>
+		</form>
+		
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
